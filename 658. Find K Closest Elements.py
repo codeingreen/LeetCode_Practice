@@ -37,6 +37,24 @@ class Solution:
             
         
         
+   '''
+   Another solution (two pointer)
+   https://leetcode.com/problems/find-k-closest-elements/discuss/419596/Easy-to-understand-python3-solution
+   '''
+   class Solution:
+            def findClosestElements(self, arr: List[int], k: int, x: int) -> List[int]:
+                # left pointer and right pointer
+                i, j = 0, len(arr)-1
+                while j-i+1 != k:
+                    # will stop once we have k elements
+                    # else keep shifting pointers towards minimum difference
+                    left_diff = abs(arr[i] - x)
+                    right_diff = abs(arr[j] - x)
+                    if left_diff > right_diff:
+                        i += 1
+                    else:
+                        j -= 1
+                return arr[i:j+1]  
         
             
         
