@@ -1,4 +1,5 @@
 '''
+https://leetcode.com/problems/sqrtx/solution/
 If x < 2, return x.
 Set the left boundary to 2, and the right boundary to x / 2.
 
