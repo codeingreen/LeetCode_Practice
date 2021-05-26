@@ -5,6 +5,9 @@
 #         self.left = left
 #         self.right = right
 
+'''
+https://leetcode.com/problems/check-completeness-of-a-binary-tree/discuss/533798/Python-O(n)-by-level-order-traversal.-90%2B-w-Diagram
+'''
 from collections import deque
 
 class Solution:
